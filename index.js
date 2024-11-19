@@ -1,3 +1,6 @@
+import { execSync } from 'child_process';
+execSync('npm install @actions/core')
+
 import * as core from '@actions/core';
 
 try {
