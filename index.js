@@ -22,5 +22,5 @@ try {
 } catch (error) {
   // Lidando com erros
   core.error('Ocorreu um erro inesperado.');
-  core.setFailed((error as Error).message);
+  core.setFailed(error.message);
 }
