@@ -1,0 +1,18 @@
+name: Teste da Ação
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  teste-numero:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v3
+
+      - name: Testar Ação
+        uses: ./ # Usa a ação do diretório atual
+        with:
+          number: "123"

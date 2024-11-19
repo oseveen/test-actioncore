@@ -1,0 +1,12 @@
+name: Example
+description: "Uma ação de exemplo usando @actions/core para validar um número."
+inputs:
+  number:
+    description: "Um número para validar."
+    required: true
+outputs:
+  isValid:
+    description: "Indica se a entrada é um número válido."
+runs:
+  using: "node16"
+  main: "index.js"
